@@ -8,8 +8,8 @@
 <title>Insert title here</title>
 </head>
 
-<%@page import="com.model.mahasiswa.BiodataModel" %> 
-<%@page import="com.model.mahasiswa.Biodata" %> 
+<%@page import="com.model.mhs.BiodataModel" %> 
+<%@page import="com.model.mhs.Biodata" %> 
 <%@page import="java.util.ArrayList" %> 
 <%@page import="com.mysql.jdbc.Connection" %> 
 <%@page import="com.mysql.jdbc.Statement" %> 
