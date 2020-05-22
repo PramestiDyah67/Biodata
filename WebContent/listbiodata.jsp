@@ -18,7 +18,7 @@ pageEncoding="UTF-8"%>
 	<tr>
 		<td>nim</td>   
 		<td>nama</td>   
-		<td>jenis kelamain</td>   
+		<td>jenis kelamin</td>   
 		<td>tempat lahir</td>   
 		<td>tanggal lahir</td>   
 		<td>alamat</td> 
@@ -35,7 +35,7 @@ pageEncoding="UTF-8"%>
 		<td><% out.print(data.get(i).getJk()); %></td>   
 		<td><% out.print(data.get(i).getTmpLahir()); %></td>   
 		<td><% out.print(data.get(i).getTglLahir()); %></td>   
-		<td><% out.print(data.get(i).getAlamat()); %></td> 	
+		<td><% out.print(data.get(i).getAlamat()); %></td> 
 		<% 
 	}%>
 </table>	

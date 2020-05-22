@@ -46,4 +46,21 @@ package com.model.mhs;
 		}
 	return biodatas;
 	}
+	public void insertData(String nim, String nama, String jk, String tmp_lahir, String tgl_lahir, String alamat) {
+		try {
+			st = (Statement) con.createStatement();
+			st.executeUpdate("INSERT INTO mahasiswa VALUES"+"("
+														   +"'"+nim+"',"
+														   +"'"+nama+"',"
+														   +"'"+jk+"',"
+														   +"'"+tmp_lahir+"',"
+														   +"'"+tgl_lahir+"',"
+														   +"'"+alamat+"'"
+														   +")");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}//statement untuk mengeksekusi query
+	}
+	
 }
