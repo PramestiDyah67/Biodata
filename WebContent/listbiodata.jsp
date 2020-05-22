@@ -38,6 +38,17 @@ pageEncoding="UTF-8"%>
 		<td><% out.print(data.get(i).getAlamat()); %></td> 
 		<% 
 	}%>
+	<%
+	String nim=request.getParameter("nim");  
+	String nama=request.getParameter("nama");  
+	String jk=request.getParameter("jk");  
+	String tmp_lahir=request.getParameter("tmp_lahir");
+	String tgl_lahir=request.getParameter("tgl_lahir");
+	String alamat=request.getParameter("alamat");
+	Class.forName("com.mysql.jdbc.Driver");
+	BiodataModel addData = new BiodataModel();
+	addData.insertData(nim, nama, jk, tmp_lahir, tgl_lahir, alamat);
+	%>
 </table>	
 </body>
 </html>
